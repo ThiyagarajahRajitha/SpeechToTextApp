@@ -12,6 +12,7 @@ obj/
 gmail-dotnet-credentials.json
 GmailKey.json
 appsettings.json
+appsettings.Development.json
 
 # Angular
 node_modules/
