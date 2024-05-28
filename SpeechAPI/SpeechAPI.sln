@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeechAPI", "SpeechAPI\SpeechAPI.csproj", "{68A40E83-4340-4FDD-B43D-4056C0846BDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68A40E83-4340-4FDD-B43D-4056C0846BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68A40E83-4340-4FDD-B43D-4056C0846BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68A40E83-4340-4FDD-B43D-4056C0846BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68A40E83-4340-4FDD-B43D-4056C0846BDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C782AC74-16C5-4039-AE1A-EE92DEB5FE92}
+	EndGlobalSection
+EndGlobal

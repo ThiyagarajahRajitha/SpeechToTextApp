@@ -1,0 +1,153 @@
+.speech-to-text-container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 2rem auto;
+    width: 700px;
+    /* Adjust width as needed */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.upload-section {
+    margin-bottom: 1rem;
+    font-size: large;
+}
+
+input[type="file"] {
+    margin: 5%;
+    font-size: medium;
+}
+
+.transcription-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transcribe-button {
+    background-color: #3f51b5;
+    /* Adjust button color */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* align-self: end; */
+    /*margin-left: 182%;*/
+    margin-left: 75%
+}
+
+.transcribe-button:hover {
+    background-color: #6e79b4;
+}
+
+
+.transcription-result {
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+    text-align: justify;
+}
+
+.transcription-text {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.send-email-button {
+    background-color: #28a745;
+    /* Adjust button color */
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.disabled-button {
+    background-color: #6e79b4;
+    /* Light gray for disabled state */
+    color: #ddd;
+    /* Light gray text for disabled state */
+    cursor: not-allowed;
+    /* Change cursor to indicate disabled state */
+    border: 1px solid #ddd;
+    /* Maintain border for consistency */
+    opacity: 0.6;
+    /* Reduce opacity for visual indication */
+}
+
+.no-transcription-message {
+    color: #f00;
+    /* Red color for error message */
+    font-weight: bold;
+    margin-top: 1rem;
+    /* Add some space above the message */
+}
+
+.error-message {
+    /* Styles applied when the error class is present (e.g., red color) */
+    color: rgb(173, 78, 78);
+}
+
+.transcribe-button[disabled] {
+    /* Styles for the disabled button */
+    background-color: #6e79b4; /* Light gray background */
+    color: #999999; /* Light gray text */
+    cursor: not-allowed; /* Indicate disabled state with cursor */
+    border: 1px solid #cccccc; /* Maintain border visibility */
+    opacity: 0.7; /* Reduce opacity to suggest disabled state */
+  }
+
+  .loading {
+    /* Apply a slight opacity to the entire section while loading */
+    opacity: 0.8;
+  }
+  
+  .loading .transcription-result,
+  .loading .transcribe-button {
+    /* Hide other elements within the section while loading */
+    display: none;
+  }
+  
+  /* Optional: Add a loading spinner animation (replace with your preferred animation) */
+  .loading.loading-spinner {
+    position: relative;
+    text-align: center;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation:forwards;
+  }
+
+  .loading-spinner {
+    position: relative;
+    text-align: center;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation:spin 1s linear infinite;
+    margin-left: 40%;
+
+  }
+  
+  /* .loading-spinner:after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 6px solid #f3f3f3; 
+    border-color: #f3f3f3 transparent #f3f3f3 transparent;
+    animation: spin 1s linear infinite;
+  } */
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

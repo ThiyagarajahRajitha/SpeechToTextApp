@@ -1,0 +1,31 @@
+<!-- <p>transcription works!</p> -->
+
+<div class="speech-to-text-container">
+  <div class="upload-section">
+    <label for="audioFile">Select audio file (.WAV only) : </label>
+    <input type="file" id="audioFile" accept=".wav" (change)="onFileSelected($event)">
+    <button (click)="transcribeFile()" class="transcribe-button" [disabled]="isTranscribing">Transcribe</button>
+    <!-- <div [ngClass]="{'loading': isTranscribing}"><div *ngIf="isTranscribing" class="loading-spinner"></div></div> -->
+  </div>
+  
+  <div class="transcription-section">
+    
+      <!-- [class.disabled-button]="!!transcription">Transcribe</button>-->
+      <!-- <div *ngIf="isTranscribing" class="loading-spinner">
+        <i class="fa fa-spinner fa-spin"></i>  </div> -->
+    <!-- <div *ngIf !="filefound"><p>No file found</p></div> -->
+    <div *ngIf="isTranscribing" class="loading-spinner"></div>
+    <div *ngIf="transcription" class="transcription-result">
+      <p class="transcription-text">Transcription:<br><br> {{ transcription }}</p>
+    </div>
+    
+    <!-- <div *ngIf="!transcription && !error && !isTranscribing" >
+      <p class="no-transcription-message">Transcription not found, Please Try again!</p>
+    </div> -->
+    <!-- <button (click)="sendEmail()" class="send-email-button">Send Email</button> -->
+  </div>
+
+  <div *ngIf="error" class="error-message">
+    {{ error }}
+  </div>
+</div>
